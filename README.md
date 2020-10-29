@@ -24,8 +24,10 @@ You can override any style and customize your calendar.
 
 Gradle - anees4ever
 ------
-RobotoCalendarView is added to maven repository [BinTray] (https://bintray.com/anees4ever/anees4ever/Calendar-View-Roboto)
-add the library in your specific project build.gradle:
+RobotoCalendarView is added to maven repository [BinTray] [ ![Download](https://api.bintray.com/packages/anees4ever/anees4ever/Calendar-View-Roboto/images/download.svg) ](https://bintray.com/anees4ever/anees4ever/Calendar-View-Roboto/_latestVersion)
+
+
+Add the library in your specific project build.gradle:
 
 ``` xml
     implementation 'com.anees4ever:roboto-calendar-view:3.6.1'
