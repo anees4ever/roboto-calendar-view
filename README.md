@@ -22,7 +22,26 @@ Take a look of the sample Activity.
 
 You can override any style and customize your calendar.
 
-Gradle
+Gradle - anees4ever
+------
+add the library in your specific project build.gradle:
+
+``` xml
+    implementation 'com.anees4ever:roboto-calendar-view:3.6.1'
+```
+
+if the library is not resolving, add the following line in the root gradle file
+
+``` xml
+repositories {
+	    maven {
+	        url "https://dl.bintray.com/anees4ever/anees4ever"
+	    }
+	}
+```
+
+
+Gradle - By author
 ------
 
 RobotoCalendarView uses the awesome tool [Jitpack] (https://jitpack.io/#marcohc/robotocalendarview)
