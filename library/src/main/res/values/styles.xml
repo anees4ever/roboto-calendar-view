@@ -1,32 +1,35 @@
 <resources xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <style name="AppBaseTheme" parent="android:Theme.Light" />
-
     <!-- Application theme. -->
-    <style name="AppTheme" parent="AppBaseTheme">
-        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+
+    <style name="RobotoCalendarMonthArrow">
+        <item name="android:background">?selectableItemBackground</item>
+        <item name="android:padding">@dimen/roboto_month_arrow_padding</item>
+        <item name="android:scaleType">fitCenter</item>
+        <item name="android:layout_marginLeft">@dimen/roboto_month_arrow_margin</item>
+        <item name="android:layout_marginRight">@dimen/roboto_month_arrow_margin</item>
     </style>
 
     <style name="RobotoCalendarMonthText">
-        <item name="fontPath">fonts/OverrideThisWithYourFontPath</item>
-        <item name="android:textSize">@dimen/roboto_calendar_month_font</item>
+        <item name="android:fontFamily">@font/metropolis_extrabold</item>
+        <item name="android:textSize">@dimen/roboto_month_title_font_size</item>
         <item name="android:textColor">@color/roboto_calendar_month_font</item>
-    </style>
-
-    <style name="RobotoCalendarMonthArrow">
-        <item name="android:tint">@color/roboto_calendar_month_arrow</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">center</item>
     </style>
 
     <style name="RobotoCalendarDayOfTheWeekText">
-        <item name="fontPath">fonts/OverrideThisWithYourFontPath</item>
-        <item name="android:textSize">@dimen/roboto_calendar_day_of_week_font</item>
-        <item name="android:textColor">@color/roboto_calendar_day_of_the_month_font</item>
+        <item name="android:fontFamily">@font/metropolis_extrabold</item>
+        <item name="android:textSize">@dimen/roboto_day_of_week_font_size</item>
+        <item name="android:textColor">@color/roboto_calendar_day_of_the_week_font</item>
+        <item name="android:gravity">center</item>
     </style>
 
     <style name="RobotoCalendarDayOfTheMonthText">
-        <item name="fontPath">fonts/OverrideThisWithYourFontPath</item>
-        <item name="android:textSize">@dimen/roboto_calendar_day_of_the_month_font</item>
+        <item name="android:fontFamily">@font/metropolis_extrabold</item>
+        <item name="android:textSize">@dimen/roboto_day_of_the_month_font</item>
         <item name="android:textColor">@color/roboto_calendar_day_of_the_month_font</item>
+        <item name="android:gravity">center</item>
     </style>
 
 </resources>

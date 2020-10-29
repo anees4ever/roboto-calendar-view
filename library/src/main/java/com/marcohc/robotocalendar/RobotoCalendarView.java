@@ -16,7 +16,6 @@
 package com.marcohc.robotocalendar;
 
 import android.content.Context;
-import android.graphics.Typeface;
 import android.os.Build;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
@@ -65,6 +64,10 @@ public class RobotoCalendarView extends LinearLayout {
     private Calendar currentCalendar = Calendar.getInstance();
     @Nullable
     private Calendar lastSelectedDayCalendar;
+
+
+    private CustomDateColor mCustomDateColor;
+
     private final OnClickListener onDayOfMonthClickListener = new OnClickListener() {
         @Override
         public void onClick(View view) {
@@ -141,6 +144,10 @@ public class RobotoCalendarView extends LinearLayout {
         init(attrs);
     }
 
+    public CustomDateColor getCustomDateColor() {
+        return mCustomDateColor;
+    }
+
     private static String checkSpecificLocales(String dayOfTheWeekString, int i) {
         // Set Wednesday as "X" in Spanish Locale.getDefault()
         if (i == 4 && "ES".equals(Locale.getDefault().getCountry())) {
@@ -182,7 +189,6 @@ public class RobotoCalendarView extends LinearLayout {
         if (firstDayWeekPosition == 1) {
             return weekIndex;
         } else {
-
             if (weekIndex == 1) {
                 return 7;
             } else {
@@ -196,6 +202,7 @@ public class RobotoCalendarView extends LinearLayout {
     }
 
     private void init(@Nullable AttributeSet set) {
+        mCustomDateColor = new CustomDateColor(getContext());
 
         if (isInEditMode()) {
             return;
@@ -277,8 +284,11 @@ public class RobotoCalendarView extends LinearLayout {
                 dayOfTheMonthBackground.setBackgroundResource(android.R.color.transparent);
             }
 
+            int color= mCustomDateColor.get(lastSelectedDayCalendar.get(Calendar.DAY_OF_MONTH),
+                    lastSelectedDayCalendar.get(Calendar.DAY_OF_WEEK), lastSelectedDayCalendar.get(Calendar.MONTH),
+                    lastSelectedDayCalendar.get(Calendar.YEAR));
             TextView dayOfTheMonth = getDayOfMonthText(lastSelectedDayCalendar);
-            dayOfTheMonth.setTextColor(ContextCompat.getColor(getContext(), R.color.roboto_calendar_day_of_the_month_font));
+            dayOfTheMonth.setTextColor(color);
 
             ImageView circleImage1 = getCircleImage1(lastSelectedDayCalendar);
             ImageView circleImage2 = getCircleImage2(lastSelectedDayCalendar);
@@ -442,7 +452,7 @@ public class RobotoCalendarView extends LinearLayout {
 
             // Apply styles
             dayOfTheMonthText.setBackgroundResource(android.R.color.transparent);
-            dayOfTheMonthText.setTypeface(null, Typeface.NORMAL);
+            //dayOfTheMonthText.setTypeface(null, Typeface.NORMAL);
             dayOfTheMonthText.setTextColor(ContextCompat.getColor(getContext(), R.color.roboto_calendar_day_of_the_month_font));
             dayOfTheMonthContainer.setBackgroundResource(android.R.color.transparent);
             dayOfTheMonthContainer.setOnClickListener(null);
@@ -455,6 +465,8 @@ public class RobotoCalendarView extends LinearLayout {
         Calendar auxCalendar = Calendar.getInstance(Locale.getDefault());
         auxCalendar.setTime(currentCalendar.getTime());
         auxCalendar.set(Calendar.DAY_OF_MONTH, 1);
+        int month= currentCalendar.get(Calendar.MONTH);
+        int year= currentCalendar.get(Calendar.YEAR);
         int firstDayOfMonth = auxCalendar.get(Calendar.DAY_OF_WEEK);
         TextView dayOfTheMonthText;
         ViewGroup dayOfTheMonthContainer;
@@ -473,6 +485,9 @@ public class RobotoCalendarView extends LinearLayout {
             dayOfTheMonthContainer.setOnLongClickListener(onDayOfMonthLongClickListener);
             dayOfTheMonthText.setVisibility(View.VISIBLE);
             dayOfTheMonthText.setText(String.valueOf(i));
+
+            int weekDay= dayOfTheMonthIndex % 7;weekDay= weekDay==0?7:weekDay;
+            dayOfTheMonthText.setTextColor(mCustomDateColor.get(i, weekDay, month, year));
         }
 
         for (int i = 36; i < 43; i++) {

@@ -1,0 +1,20 @@
+<resources>
+    <dimen name="roboto_main_padding">8dp</dimen>
+    <dimen name="roboto_month_margin_bottom">8dp</dimen>
+    <dimen name="roboto_week_margin_bottom">8dp</dimen>
+
+    <dimen name="roboto_month_arrow_margin">8dp</dimen>
+    <dimen name="roboto_month_arrow_padding">8dp</dimen>
+    <dimen name="roboto_month_arrow_size">38dp</dimen>
+    <dimen name="roboto_month_title_font_size">20sp</dimen>
+
+
+    <dimen name="roboto_day_of_week_font_size">20sp</dimen>
+
+    <dimen name="roboto_day_of_the_month_padding">4dp</dimen>
+    <dimen name="roboto_day_of_the_month_background_size">40dp</dimen>
+    <dimen name="roboto_day_of_the_month_font">20sp</dimen>
+
+    <dimen name="roboto_circle_size">6dp</dimen>
+    <dimen name="roboto_ring_size">18dp</dimen>
+</resources>

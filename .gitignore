@@ -66,3 +66,9 @@ tmp
 /build
 /out
 
+/.gradle/*
+/.idea/*
+/build/*
+/sample/build/*
+/library/build/*
+/local.properties

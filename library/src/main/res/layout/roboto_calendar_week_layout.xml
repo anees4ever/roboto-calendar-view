@@ -9,7 +9,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:layout_weight="1"
         android:gravity="center_vertical"
         android:orientation="vertical"
@@ -19,7 +19,6 @@
             style="@style/RobotoCalendarDayOfTheWeekText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center"
             android:tag="dayOfTheWeekText1"
             tools:text="Mon" />
 
@@ -37,7 +36,6 @@
             style="@style/RobotoCalendarDayOfTheWeekText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center"
             android:tag="dayOfTheWeekText2"
             tools:text="Tue" />
 
@@ -55,7 +53,6 @@
             style="@style/RobotoCalendarDayOfTheWeekText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center"
             android:tag="dayOfTheWeekText3"
             tools:text="Wed" />
 
@@ -73,7 +70,6 @@
             style="@style/RobotoCalendarDayOfTheWeekText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center"
             android:tag="dayOfTheWeekText4"
             tools:text="Thu" />
 
@@ -91,7 +87,6 @@
             style="@style/RobotoCalendarDayOfTheWeekText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center"
             android:tag="dayOfTheWeekText5"
             tools:text="Fri" />
 
@@ -109,7 +104,6 @@
             style="@style/RobotoCalendarDayOfTheWeekText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center"
             android:tag="dayOfTheWeekText6"
             tools:text="Sat" />
 
@@ -127,7 +121,6 @@
             style="@style/RobotoCalendarDayOfTheWeekText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center"
             android:tag="dayOfTheWeekText7"
             tools:text="Sun" />
     </LinearLayout>
