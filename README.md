@@ -24,6 +24,7 @@ You can override any style and customize your calendar.
 
 Gradle - anees4ever
 ------
+RobotoCalendarView is added to maven repository [BinTray] (https://bintray.com/anees4ever/anees4ever/Calendar-View-Roboto)
 add the library in your specific project build.gradle:
 
 ``` xml
@@ -39,6 +40,14 @@ repositories {
 	    }
 	}
 ```
+
+if you get XML inflation error in runtime, please add these dependancies
+
+``` xml
+    implementation 'io.github.inflationx:calligraphy3:3.0.0'
+    implementation 'io.github.inflationx:viewpump:1.0.0'
+```
+
 
 
 Gradle - By author
