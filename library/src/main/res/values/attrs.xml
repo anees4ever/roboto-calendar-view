@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="RobotoCalendarView">
+        <attr name="colorTheme" format="enum">
+            <enum name="colorThemeDark" value="0"/>
+            <enum name="colorThemeLight" value="1"/>
+        </attr>
+    </declare-styleable>
+
+</resources>

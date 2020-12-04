@@ -7,14 +7,28 @@ import android.util.SparseIntArray;
 import java.util.Calendar;
 
 public class CustomDateColor {
+    public static final int COLOR_THEME_DARK= 0;
+    public static final int COLOR_THEME_LIGHT= 1;
+
+    public static int[] RES_DAY_OF_MONTH_FONT= {R.color.roboto_calendar_day_of_the_month_font_dark, R.color.roboto_calendar_day_of_the_month_font_light};
+    public static int[] RES_SELECTED_DAY= {R.color.roboto_calendar_selected_day_font_dark, R.color.roboto_calendar_selected_day_font_light};
+
+    public static int[] RES_MONTH_LAYOUT= {R.layout.roboto_calendar_view_layout_dark, R.layout.roboto_calendar_view_layout_light};
+    public static int[] RES_DAY_OF_MONTH_LAYOUT= {R.layout.roboto_calendar_day_of_the_month_layout_dark, R.layout.roboto_calendar_day_of_the_month_layout_light};
+
+    public static int[] RES_CIRCLE= {R.drawable.circle_dark, R.drawable.circle_light};
+    public static int[] RES_RING= {R.drawable.ring_dark, R.drawable.ring_light};
+
+
     private SparseIntArray weekDateColors;
     private SparseIntArray monthDateColors;
     private DateDrawCallback mCustomCallback= null;
-    private int defaultColor= 0;
-    public CustomDateColor(Context context) {
+    private int defaultColor= 0, mColorTheme= COLOR_THEME_DARK;
+    public CustomDateColor(Context context, int colorTheme) {
+        mColorTheme= colorTheme;
         weekDateColors= new SparseIntArray(7);
         monthDateColors= new SparseIntArray(31);
-        defaultColor= ContextCompat.getColor(context, R.color.roboto_calendar_day_of_the_month_font);
+        defaultColor= ContextCompat.getColor(context, RES_DAY_OF_MONTH_FONT[mColorTheme]);
         reset();
     }
 

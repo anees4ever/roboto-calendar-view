@@ -10,26 +10,38 @@
         <item name="android:layout_marginRight">@dimen/roboto_month_arrow_margin</item>
     </style>
 
-    <style name="RobotoCalendarMonthText">
+
+    <style name="RobotoCalendarMonthTextDark">
         <item name="android:fontFamily">@font/metropolis_extrabold</item>
         <item name="android:textSize">@dimen/roboto_month_title_font_size</item>
-        <item name="android:textColor">@color/roboto_calendar_month_font</item>
+        <item name="android:textColor">@color/roboto_calendar_month_font_dark</item>
         <item name="android:textStyle">bold</item>
         <item name="android:gravity">center</item>
     </style>
-
-    <style name="RobotoCalendarDayOfTheWeekText">
-        <item name="android:fontFamily">@font/metropolis_extrabold</item>
-        <item name="android:textSize">@dimen/roboto_day_of_week_font_size</item>
-        <item name="android:textColor">@color/roboto_calendar_day_of_the_week_font</item>
-        <item name="android:gravity">center</item>
+    <style name="RobotoCalendarMonthTextLight" parent="RobotoCalendarMonthTextDark">
+        <item name="android:textColor">@color/roboto_calendar_month_font_light</item>
     </style>
 
-    <style name="RobotoCalendarDayOfTheMonthText">
+
+    <style name="RobotoCalendarDayOfTheWeekTextDark">
+        <item name="android:fontFamily">@font/metropolis_extrabold</item>
+        <item name="android:textSize">@dimen/roboto_day_of_week_font_size</item>
+        <item name="android:textColor">@color/roboto_calendar_day_of_the_week_font_dark</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <style name="RobotoCalendarDayOfTheWeekTextLight" parent="RobotoCalendarDayOfTheWeekTextDark">
+        <item name="android:textColor">@color/roboto_calendar_day_of_the_week_font_light</item>
+    </style>
+
+
+    <style name="RobotoCalendarDayOfTheMonthTextDark">
         <item name="android:fontFamily">@font/metropolis_extrabold</item>
         <item name="android:textSize">@dimen/roboto_day_of_the_month_font</item>
-        <item name="android:textColor">@color/roboto_calendar_day_of_the_month_font</item>
+        <item name="android:textColor">@color/roboto_calendar_day_of_the_month_font_dark</item>
         <item name="android:gravity">center</item>
+    </style>
+    <style name="RobotoCalendarDayOfTheMonthTextLight" parent="RobotoCalendarDayOfTheMonthTextDark">
+        <item name="android:textColor">@color/roboto_calendar_day_of_the_month_font_light</item>
     </style>
 
 </resources>

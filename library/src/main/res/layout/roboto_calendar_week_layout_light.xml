@@ -16,7 +16,7 @@
         android:tag="dayOfTheWeekLayout1">
 
         <TextView
-            style="@style/RobotoCalendarDayOfTheWeekText"
+            style="@style/RobotoCalendarDayOfTheWeekTextLight"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:tag="dayOfTheWeekText1"
@@ -33,7 +33,7 @@
         android:tag="dayOfTheWeekLayout2">
 
         <TextView
-            style="@style/RobotoCalendarDayOfTheWeekText"
+            style="@style/RobotoCalendarDayOfTheWeekTextLight"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:tag="dayOfTheWeekText2"
@@ -50,7 +50,7 @@
         android:tag="dayOfTheWeekLayout3">
 
         <TextView
-            style="@style/RobotoCalendarDayOfTheWeekText"
+            style="@style/RobotoCalendarDayOfTheWeekTextLight"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:tag="dayOfTheWeekText3"
@@ -67,7 +67,7 @@
         android:tag="dayOfTheWeekLayout4">
 
         <TextView
-            style="@style/RobotoCalendarDayOfTheWeekText"
+            style="@style/RobotoCalendarDayOfTheWeekTextLight"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:tag="dayOfTheWeekText4"
@@ -84,7 +84,7 @@
         android:tag="dayOfTheWeekLayout5">
 
         <TextView
-            style="@style/RobotoCalendarDayOfTheWeekText"
+            style="@style/RobotoCalendarDayOfTheWeekTextLight"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:tag="dayOfTheWeekText5"
@@ -101,7 +101,7 @@
         android:tag="dayOfTheWeekLayout6">
 
         <TextView
-            style="@style/RobotoCalendarDayOfTheWeekText"
+            style="@style/RobotoCalendarDayOfTheWeekTextLight"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:tag="dayOfTheWeekText6"
@@ -118,7 +118,7 @@
         android:tag="dayOfTheWeekLayout7">
 
         <TextView
-            style="@style/RobotoCalendarDayOfTheWeekText"
+            style="@style/RobotoCalendarDayOfTheWeekTextLight"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:tag="dayOfTheWeekText7"

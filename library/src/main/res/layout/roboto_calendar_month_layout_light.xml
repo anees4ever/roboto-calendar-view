@@ -6,7 +6,7 @@
     android:layout_height="wrap_content"
     android:clickable="true"
     android:focusable="true"
-    android:background="@color/roboto_calendar_month_background"
+    android:background="@color/roboto_calendar_month_background_light"
     android:gravity="center_vertical"
     android:orientation="horizontal">
 
@@ -20,7 +20,7 @@
 
     <TextView
         android:id="@+id/monthText"
-        style="@style/RobotoCalendarMonthText"
+        style="@style/RobotoCalendarMonthTextLight"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_weight="1"

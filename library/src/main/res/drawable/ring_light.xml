@@ -5,6 +5,6 @@
     android:thickness="2dp"
     android:useLevel="false">
 
-    <solid android:color="@color/roboto_calendar_current_day_ring" />
+    <solid android:color="@color/roboto_calendar_current_day_ring_light" />
 
 </shape>

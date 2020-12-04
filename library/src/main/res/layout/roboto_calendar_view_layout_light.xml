@@ -2,18 +2,18 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/roboto_calendar_background"
+    android:background="@color/roboto_calendar_background_light"
     android:orientation="vertical"
     android:padding="@dimen/roboto_main_padding">
 
     <include
-        layout="@layout/roboto_calendar_month_layout"
+        layout="@layout/roboto_calendar_month_layout_light"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="@dimen/roboto_month_margin_bottom" />
 
     <include
-        layout="@layout/roboto_calendar_week_layout"
+        layout="@layout/roboto_calendar_week_layout_light"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="@dimen/roboto_week_margin_bottom" />

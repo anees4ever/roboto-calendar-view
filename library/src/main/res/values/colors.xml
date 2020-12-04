@@ -1,18 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="roboto_calendar_background">#000000</color><!--231F20    FFFFFF-->
+    <color name="roboto_calendar_background_dark">#000000</color>
+    <color name="roboto_calendar_background_light">#ffffff</color>
 
-    <color name="roboto_calendar_month_background">#27AAE2</color>
-    <color name="roboto_calendar_month_font">#FFFFFF</color>
-    <color name="roboto_calendar_day_of_the_week_font">#017AA7</color>
-    <color name="roboto_calendar_day_of_the_month_font">#FFFFFF</color><!--    231F20-->
 
-    <color name="roboto_calendar_selected_day_background">#27AAE2</color>
-    <color name="roboto_calendar_selected_day_font">#FFFFFF</color>
+    <color name="roboto_calendar_month_background_dark">#27AAE2</color>
+    <color name="roboto_calendar_month_background_light">#d655b9</color>
 
-    <color name="roboto_calendar_current_day_ring">#27AAE2</color>
+    <color name="roboto_calendar_month_font_dark">#FFFFFF</color>
+    <color name="roboto_calendar_month_font_light">#FFFFFF</color>
+
+    <color name="roboto_calendar_day_of_the_week_font_dark">#017AA7</color>
+    <color name="roboto_calendar_day_of_the_week_font_light">#9248d2</color>
+
+    <color name="roboto_calendar_day_of_the_month_font_dark">#FFFFFF</color>
+    <color name="roboto_calendar_day_of_the_month_font_light">#9248d2</color>
+
+
+
+    <color name="roboto_calendar_selected_day_background_dark">#27AAE2</color>
+    <color name="roboto_calendar_selected_day_background_light">#d655b9</color>
+
+    <color name="roboto_calendar_selected_day_font_dark">#FFFFFF</color>
+    <color name="roboto_calendar_selected_day_font_light">#FFFFFF</color>
+
+
+
+    <color name="roboto_calendar_current_day_ring_dark">#27AAE2</color>
+    <color name="roboto_calendar_current_day_ring_light">#d655b9</color>
 
     <color name="roboto_calendar_circle_1">#D50000</color>
-    <color name="roboto_calendar_circle_2">#017AA7</color>
+    <color name="roboto_calendar_circle_2">#64DD17</color><!--017AA7-->
 
 </resources>
